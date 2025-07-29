@@ -1,0 +1,35 @@
+
+1. **Pengertian NoSQL**  
+NoSQL adalah jenis sistem manajemen basis data yang tidak menggunakan struktur tabel relasional seperti RDBMS. NoSQL dirancang untuk menangani data yang besar, tidak terstruktur, dan berubah dengan cepat. NoSQL mendukung berbagai model data seperti dokumen, key-value, grafik, dan wide-column.
+
+2. **Kapan Menggunakan NoSQL dan RDBMS**  
+Gunakan NoSQL ketika:  
+- Data tidak terstruktur atau semi-terstruktur  
+- Skala data sangat besar dan cepat berubah  
+- Butuh fleksibilitas dalam skema (schema-less)  
+- Prioritas pada kecepatan baca/tulis dan skalabilitas horizontal  
+Gunakan RDBMS ketika:  
+- Data terstruktur dan memiliki hubungan kompleks antar tabel  
+- Butuh transaksi yang kuat (ACID)  
+- Skema data relatif stabil  
+- Aplikasi membutuhkan integritas data tinggi
+
+3. **Contoh 2 Tools/Platform NoSQL (selain ElasticSearch)**  
+a. **MongoDB**  
+   - Tipe: Document-oriented  
+   - Keunggulan: Skema fleksibel, dukungan query yang kuat, integrasi mudah dengan banyak bahasa pemrograman  
+b. **Redis**  
+   - Tipe: Key-Value Store (in-memory)  
+   - Keunggulan: Sangat cepat untuk operasi baca/tulis, cocok untuk caching, session store, dan real-time analytics
+
+4. **Airflow**  
+Apache Airflow adalah platform open-source untuk menjadwalkan dan memonitor alur kerja (workflow) data secara terprogram. Dengan Airflow, kita bisa mendefinisikan proses ETL sebagai DAG (Directed Acyclic Graph) dan mengatur urutan serta dependensinya. Airflow memudahkan automasi pipeline data yang kompleks dan dapat diskalakan.
+
+5. **Great Expectations**  
+Great Expectations adalah framework open-source untuk validasi data. Alat ini membantu memverifikasi kualitas data dengan menulis "expectations" atau aturan yang menggambarkan bagaimana data seharusnya terlihat. Cocok digunakan untuk mengecek data dalam pipeline ETL agar data yang masuk selalu konsisten dan sesuai standar.
+
+6. **Batch Processing**  
+Batch Processing adalah teknik pemrosesan data dalam jumlah besar secara berkala (batch), bukan secara langsung (real-time).  
+- Contoh penggunaan: Proses laporan keuangan mingguan, pemrosesan data transaksi akhir hari  
+- Tools: Apache Spark, Hadoop, Talend  
+- Keunggulan: Efisien untuk pemrosesan data besar yang tidak membutuhkan hasil instan
